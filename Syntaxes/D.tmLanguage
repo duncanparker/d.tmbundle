@@ -18,6 +18,49 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>include</key>
+			<string>text.html.basic</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>q"HTML</string>
+			<key>end</key>
+			<string>HTML"</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>text.html.basic</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>q"JS</string>
+			<key>end</key>
+			<string>JS"</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.js</key>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>q"CSS</string>
+			<key>end</key>
+			<string>CSS"</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.css</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>\A#!.+</string>
 			<key>name</key>
